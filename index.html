@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="game">
+      <div class="text-center" id="top">
+        <h1>Simon</h1>
+        <span>Off</span><span class="toggle-left" id="toggle"><span class="off" id="off"></span><span id="on"></span></span><span>On</span>
+        <table>
+          <tr id="top-row">
+            <td></td>
+            <td></td>
+            <td><div id="light"></div></td>
+          </tr>
+          <tr>
+            <td><a id="start-button"></a></td>
+            <td id="count-display">- -</td>
+            <td><a id="strict-button"></a></td>
+          </tr>
+          <tr>
+            <td>Start</td>
+            <td>Count</td>
+            <td>Strict</td>
+          </tr>
+        </table>
+      </div>
+      <table id="color-table">
+        <tr>
+          <td id="green"></td>
+          <td id="blue"></td>
+        </tr>
+        <tr>
+          <td id="yellow"></td>
+          <td id="red"></td>
+        </tr>
+      </table>
+    </div>
+    <audio id="green-sound">
+      <source src="simonSound1.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="blue-sound">
+      <source src="simonSound2.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="yellow-sound">
+      <source src="simonSound3.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="red-sound">
+      <source src="simonSound4.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="wrong-sound">
+      <source src="244932__kwahmah-02__short-buzzer.wav" type="audio/wav">
+      <source src="49024__moca__kit-buzhum.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="win-sound">
+      <source src="Ta Da-SoundBible.com-1884170640.mp3" type="audio/mpeg">
+    </audio>
+    <script src="app.js"></script>
+  </body>
+<html>
